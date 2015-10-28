@@ -1,16 +1,16 @@
 function fizzBuzz(){
 	for (var i = 0; i <= 100; i++) {
 		if (i % 3 === 0) { 
-			$('.list').writeln("Fizz");
+			$('.list').prepend("Fizz");
 		}
 		else if (i % 5 === 0) {
-			$('.list').writeln("Buzz");
+			$('.list').append("Buzz");
 		}
-		else if (i % 3 === 0 && i % 5 === 0) {
-			$('.list').writeln("FizzBuzz");
+		else if ((i % 3 === 0) && (i % 5 === 0)) {
+			$('.list').append("FizzBuzz");
 		}
 		else {
-			$('.list').writeln(i);
+			$('.list').append(i);
 		}
 	}
 };
